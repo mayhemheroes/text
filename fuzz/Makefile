@@ -1,0 +1,2 @@
+text-fuzz: text-fuzz.cpp
+	clang++ -g -std=c++17 -fsanitize=fuzzer,address,undefined -fno-sanitize-recover=undefined -lztd.cuneicode -lztd.encoding_tables -lztd.idk -lztd.platform -o text-fuzz text-fuzz.cpp

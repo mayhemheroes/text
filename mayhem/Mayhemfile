@@ -1,0 +1,6 @@
+project: text
+target: text-fuzz
+
+cmds:
+    - cmd: ./text-fuzz
+      libfuzzer: true
